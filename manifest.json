@@ -1,0 +1,22 @@
+{
+  "name": "Rick Troller",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "This extension randomly takes over links to rick roll you.",
+  "homepage_url": "https://github.com/SUPERCILEX/rick-troller",
+  "options_page": "src/options/index.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "src/inject/index.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
